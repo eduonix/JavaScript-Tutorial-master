@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <script>
+    // create number object using the new keyword and the Number() constructor
+    var numberObject = new Number(1);
+    document.write(numberObject+"<br/>"); // outputs 1
+    document.write(typeof numberObject +"<br/>") // logs 'object'
+    // create number literal/primitive using the number constructor without new
+    var numberObjectWithOutNew = Number(1); // without using new keyword
+    document.write(numberObjectWithOutNew +"<br/>"); // logs 1
+    document.write(typeof numberObjectWithOutNew +"<br/>") // logs 'number'
+    // create number literal/primitive (constructor leveraged behind the scene)
+    var numberLiteral = 1;
+    document.write(numberLiteral +"<br/>"); // outputs 1
+    document.write(typeof numberLiteral+"<br/>"); // logs 'number'
+    </script>
+</body>
+</html>

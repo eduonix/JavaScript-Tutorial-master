@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>  
+      <script type = "text/javascript">
+         function concatenate(first, last) {
+            var full;
+            full = first + last;
+            return full;
+         }
+         function secondFunction() {
+            var result;
+            result = concatenate('Radhika', ' Omkar');
+            console.log(result );
+         }
+      </script>      
+   </head>
+   
+   <body>
+      <p>Click the following button to call the function</p>      
+      <form>
+         <input type = "button" onclick = "secondFunction()" value = "Call Function">
+      </form>      
+      <p>Use different parameters and check output</p>  
+  </body>
+</html>

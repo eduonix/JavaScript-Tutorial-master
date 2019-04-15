@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>User Defined Prototypes</title>
+      <script>
+         function book(title, author) {
+            this.title = title; 
+            this.author  = author;
+         }
+      </script> 
+   </head>
+   
+   <body>   
+      <script>
+         var myBook = new book("Python Deep Learning", "Radhika");
+         book.prototype.price = null;
+         myBook.price = 500;
+         
+         console.log("Book title is : " + myBook.title );
+         console.log("Book author is : " + myBook.author );
+         console.log("Book price is : " + myBook.price );
+      </script>     
+   </body>
+</html>

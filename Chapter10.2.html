@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>   
+      <script type = "text/javascript">
+            function getConfirmation() {
+               var retVal = confirm(("Press a button!"));
+               if( retVal == true ) {
+                  document.write ("You pressed OK!");
+                  return true;
+               } else {
+                  document.write ("You pressed Cancel!");
+                  return false;
+               }
+            }
+      </script>     
+   </head>
+   
+   <body>
+      <p>Click the following button to see the result: </p>      
+      <form>
+         <input type = "button" value = "Click Me" onclick = "getConfirmation();" />
+      </form>      
+   </body>
+</html>

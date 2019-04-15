@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+	<script>
+		var myArray = [];
+		myArray[50] = 'blue';
+		myArray[50] = { 'color': 'blue' }; // Change object type from string to Object() object.
+		console.log(myArray[50]); // Logs 'Object {color="blue"}'.
+		// Using brackets to access the index in the array, then the propertyblue.
+		console.log(myArray[50]['color']); // Logs 'blue'.
+		// Using dot notation.
+	console.log(myArray[50].color); // Logs 'blue'.
+	</script>
+</body>
+</html>

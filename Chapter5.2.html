@@ -1,0 +1,23 @@
+<!html>
+   <head>
+      <title>Boolean Prototype Property</title>      
+      <script type = "text/javascript">
+         function book(title, author) {
+            // Accessing the title name and author name
+            this.title = title; 
+            this.author  = author;
+         }
+      </script>      
+   </head>
+   <body>      
+      <script type = "text/javascript">
+         var myBook = new book("Data Science Ebook", "Radhika Datar");
+         book.prototype.price = null;
+         myBook.price = 500;
+         
+         console.log("Book title is : " + myBook.title + "<br>");
+         console.log("Book author is : " + myBook.author + "<br>");
+         console.log("Book price is : " + myBook.price + "<br>");
+      </script>     
+   </body>
+</html>
